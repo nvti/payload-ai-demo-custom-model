@@ -15,17 +15,20 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
   },
   "dependencies": {
+    "@ai-stack/payloadcms": "github:nvti/payload-ai#build",
+    "@openrouter/ai-sdk-provider": "^0.4.5",
+    "@payloadcms/db-sqlite": "3.31.0",
     "@payloadcms/next": "3.31.0",
     "@payloadcms/payload-cloud": "3.31.0",
     "@payloadcms/richtext-lexical": "3.31.0",
+    "ai": "^3.4.33",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "next": "15.2.3",
     "payload": "3.31.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "sharp": "0.32.6",
-    "@payloadcms/db-sqlite": "3.31.0"
+    "sharp": "0.32.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
@@ -38,8 +41,7 @@
     "typescript": "5.7.3"
   },
   "engines": {
-    "node": "^18.20.2 || >=20.9.0",
-    "pnpm": "^9"
+    "node": "^18.20.2 || >=20.9.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
