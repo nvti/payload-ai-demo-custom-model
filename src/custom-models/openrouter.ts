@@ -1,6 +1,6 @@
 import { openrouter } from '@openrouter/ai-sdk-provider'
 import { GenerationModel } from '@ai-stack/payloadcms/types'
-import { streamText } from 'ai'
+import { generateText, streamText } from 'ai'
 
 const defaultSystemPrompt = `IMPORTANT INSTRUCTION:
 Produce only the requested output text.
@@ -14,12 +14,21 @@ export const openrouterTextModel: GenerationModel = {
   fields: ['text', 'textarea'],
   handler: async (prompt: string, options: { locale: string; model: string; system: string }) => {
     const streamTextResult = await streamText({
-      model: openrouter(options.model),
+      model: openrouter(options.model) as any,
       prompt,
       system: options.system || defaultSystemPrompt,
     })
 
     return streamTextResult.toDataStreamResponse()
+  },
+  generateText: async (prompt: string, system: string) => {
+    const { text } = await generateText({
+      model: openrouter('google/gemini-2.0-flash-001') as any,
+      prompt,
+      system: system,
+    })
+
+    return text
   },
   output: 'text',
   settings: {

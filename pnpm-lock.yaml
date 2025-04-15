@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@ai-stack/payloadcms':
         specifier: github:nvti/payload-ai#build
-        version: https://codeload.github.com/nvti/payload-ai/tar.gz/f1dc954271ecff7b895ddd6969f41e1cf61ea52e(93a18c23e96bdfc67608714f4af35113)
+        version: https://codeload.github.com/nvti/payload-ai/tar.gz/9abc09e384718f4e48ae77c8dc119347aae4cf71(93a18c23e96bdfc67608714f4af35113)
       '@openrouter/ai-sdk-provider':
         specifier: ^0.4.5
         version: 0.4.5(zod@3.24.2)
@@ -186,8 +186,8 @@ packages:
       vue:
         optional: true
 
-  '@ai-stack/payloadcms@https://codeload.github.com/nvti/payload-ai/tar.gz/f1dc954271ecff7b895ddd6969f41e1cf61ea52e':
-    resolution: {tarball: https://codeload.github.com/nvti/payload-ai/tar.gz/f1dc954271ecff7b895ddd6969f41e1cf61ea52e}
+  '@ai-stack/payloadcms@https://codeload.github.com/nvti/payload-ai/tar.gz/9abc09e384718f4e48ae77c8dc119347aae4cf71':
+    resolution: {tarball: https://codeload.github.com/nvti/payload-ai/tar.gz/9abc09e384718f4e48ae77c8dc119347aae4cf71}
     version: 3.2.7-beta
     peerDependencies:
       '@lexical/html': ^0.28.0
@@ -4453,7 +4453,7 @@ snapshots:
     transitivePeerDependencies:
       - zod
 
-  '@ai-stack/payloadcms@https://codeload.github.com/nvti/payload-ai/tar.gz/f1dc954271ecff7b895ddd6969f41e1cf61ea52e(93a18c23e96bdfc67608714f4af35113)':
+  '@ai-stack/payloadcms@https://codeload.github.com/nvti/payload-ai/tar.gz/9abc09e384718f4e48ae77c8dc119347aae4cf71(93a18c23e96bdfc67608714f4af35113)':
     dependencies:
       '@ai-sdk/anthropic': 0.0.38(zod@3.24.2)
       '@ai-sdk/openai': 0.0.43(zod@3.24.2)
