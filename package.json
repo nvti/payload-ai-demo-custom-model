@@ -18,7 +18,7 @@
     "@ai-stack/payloadcms": "github:nvti/payload-ai#build",
     "@openrouter/ai-sdk-provider": "^0.4.5",
     "@payloadcms/db-sqlite": "3.31.0",
-    "@payloadcms/next": "3.31.0",
+    "@payloadcms/next": "3.44.0",
     "@payloadcms/payload-cloud": "3.31.0",
     "@payloadcms/richtext-lexical": "3.31.0",
     "ai": "^3.4.33",
